@@ -1,11 +1,31 @@
 ﻿using PooConcepts.Backend;
+using System.Windows.Markup;
 
 try
 {
+    var employees = new List<Employee>();
+    decimal payroll = 0;
     var employee1 = new SalaryEmployee(1, "Maria", "Perez", true, new Date(1990, 5, 15), new Date(2015, 3, 1), 2500000);
-    var employee2 = new SalaryEmployee(1, "Joaquín", "Gonzales", true, new Date(1980, 3, 5), new Date(2010, 11, 15), 10395876);
-    Console.WriteLine(employee1);
-    Console.WriteLine(employee2);
+    employees.Add(employee1);
+    var employee2 = new SalaryEmployee(2, "Joaquín", "Gonzales", true, new Date(1980, 3, 5), new Date(2016, 11, 16), 10395876);
+    employees.Add(employee2);
+    var employee3 = new HourlyEmployee(3, "Ana", "García", true, new Date(1995, 8, 20), new Date(2022, 6, 1), 18000, 95);
+    employees.Add(employee3);
+    var employee4 = new HourlyEmployee(4, "Kevin", "Rua", true, new Date(1998, 8, 20), new Date(2021, 6, 1), 10000, 112);
+    employees.Add(employee4);
+    var employee5 = new CommisionEmployee(5, "Sofia", "Lopez", true, new Date(1992, 12, 10), new Date(2018, 3, 15), 0.03f, 600000000);
+    employees.Add(employee5);
+    var employee6 = new CommisionEmployee(6, "Diego", "Martinez", true, new Date(1985, 7, 30), new Date(2010, 9, 1), 0.03f, 120000000);
+    employees.Add(employee6);
+
+    foreach (var employee in employees)
+    {
+        Console.WriteLine(new string('-', 48));
+        Console.WriteLine(employee);
+        payroll += employee.GetValueToPay();
+    }
+    Console.WriteLine(new string('=', 48));
+    Console.WriteLine($"Payroll....................:{payroll,20:C2}");
 }
 catch (Exception ex)
 {

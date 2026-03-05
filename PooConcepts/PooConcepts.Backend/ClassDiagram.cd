@@ -31,8 +31,31 @@
   <Class Name="PooConcepts.Backend.SalaryEmployee">
     <Position X="9.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ACAAACAAAAAgAAAEAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <HashCode>ACAAACAAAAAAAAAEAAAAAAAAAAAAAAAIAAAAAAQAAAA=</HashCode>
       <FileName>SalaryEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PooConcepts.Backend.HourlyEmployee">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <InheritanceLine Type="PooConcepts.Backend.Employee" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="7.25" Y="2.375" />
+        <Point X="8.446" Y="2.375" />
+        <Point X="8.446" Y="4.125" />
+        <Point X="10" Y="4.125" />
+        <Point X="10" Y="4.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AIAABAAAAAAAAAAEAAgAAAAAAABEAAAIAAAAAAAAAAE=</HashCode>
+      <FileName>HourlyEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PooConcepts.Backend.CommisionEmployee">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAJAAAAAAAAICAAEAAAABAAAAAAAAAAIAAgAAAAAAAA=</HashCode>
+      <FileName>CommisionEmployee.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
