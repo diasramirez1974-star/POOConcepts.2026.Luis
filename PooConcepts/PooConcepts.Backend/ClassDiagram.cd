@@ -27,6 +27,7 @@
       <Property Name="BornDate" />
       <Property Name="HireDate" />
     </ShowAsAssociation>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="PooConcepts.Backend.SalaryEmployee">
     <Position X="9.25" Y="0.5" Width="1.5" />
@@ -36,14 +37,14 @@
     </TypeIdentifier>
   </Class>
   <Class Name="PooConcepts.Backend.HourlyEmployee">
-    <Position X="9.25" Y="4.5" Width="1.5" />
+    <Position X="9.25" Y="4" Width="1.5" />
     <InheritanceLine Type="PooConcepts.Backend.Employee" ManuallyRouted="true" FixedFromPoint="true">
       <Path>
         <Point X="7.25" Y="2.375" />
         <Point X="8.446" Y="2.375" />
-        <Point X="8.446" Y="4.125" />
-        <Point X="10" Y="4.125" />
-        <Point X="10" Y="4.5" />
+        <Point X="8.446" Y="3.772" />
+        <Point X="10" Y="3.772" />
+        <Point X="10" Y="4" />
       </Path>
     </InheritanceLine>
     <TypeIdentifier>
@@ -65,5 +66,23 @@
       <FileName>BaseCommisionEmployee.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="PooConcepts.Backend.Invoice">
+    <Position X="12" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABACAAAAAAAgAAAFAAAAAAAAAAAAAAAJAAIggAAAgAA=</HashCode>
+      <FileName>Invoice.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Date" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="PooConcepts.Backend.IPay">
+    <Position X="12" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>IPay.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
